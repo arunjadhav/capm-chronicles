@@ -1,0 +1,88 @@
+# GitHub Pages configuration for a technical book
+
+# Site settings
+title: "CAP Chronicles"
+longtitle: "CAP Chronicles: Part 1 – The Art of Building"
+author: "Arun Jadhav"
+author_email: "a2jadhav@gmail.com"
+description: "A technical book on SAP CAP, development, and the Bookshop sample."
+
+# Use jekyll-chapterbook theme via remote_theme
+remote_theme: jasongrimes/jekyll-chapterbook
+
+# Optional settings
+baseurl_canonical: ""
+favicon_path: assets/gitbook/images/favicon.ico
+
+bookcrumbs:  
+  contents_url: /index.html
+  book_icon: assets/gitbook/images/apple-touch-icon-precomposed-152.png
+
+in_chapter_toc:
+  enabled: true
+  h_min: 2
+  h_max: 3
+
+sidebar_toc:
+  enabled: false
+  h_min: 2
+  h_max: 3
+
+github_edit:
+  enabled: false
+  base_url: https://github.com/arunjadhav/CAPM-Chronicles-Part-1-The-Art-of-Building/edit/main/
+
+extra_css:
+
+show_drafts_in_dev: false
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _drafts
+  - tmp
+
+# Build settings
+destination: ./_site
+incremental: false
+regenerate: true
+
+# Plugins
+plugins:
+  - jekyll-readme-index
+
+# Collections
+collections:
+  chapters:
+    output: true
+  pages:
+    output: true
+    permalink: /:slug:output_ext
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+      permalink: /:slug:output_ext
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  math_engine: mathjax
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    guess_lang: true
+syntax_highlighter_style: colorful
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+
+page_width: 800px
