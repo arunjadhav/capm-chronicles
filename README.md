@@ -1,7 +1,3 @@
-# CAP Chronicles: Part 1 – The Art of Building
-
----
-
 Welcome! This is the Table of Contents for the Bookshop Tales. Click a chapter to begin reading.
 
 - [Preface](Preface.md)
