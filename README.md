@@ -1,6 +1,5 @@
 Welcome! This is the Table of Contents for the Bookshop Tales. Click a chapter to begin reading.
 
-- [Preface](Preface.md)
 - [Chapter 1: The Shift, The Struggle, The Spark](Chapter-1.md)
 - [Chapter 2: The First Real Build](Chapter-2.md)
 - [Chapter 3: The Setup (Immediate Destruction of Confidence)](Chapter-3.md)
