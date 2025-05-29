@@ -87,9 +87,6 @@ service CatalogService {
 Alex grinned.
 “So actions are bossy, and functions are curious?”
 “Exactly,” Emma said. “Just like you and Byte.”
-
-________________________________________
-
 ________________________________________
 
 📝 Where Do You Implement Actions and Functions?
