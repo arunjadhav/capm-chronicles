@@ -4,7 +4,7 @@ order: 40
 title: "The Service Layer"
 ---
 
-## The Curiosity Continues
+### The Curiosity Continues
 Alex was on a roll. He had built entities, added mock data, tested services, and even sprinkled in some custom logic. But as he stared at his terminal, a new question bubbled up like a thought in a hot cup of coffee.
 
 “Byte,” he asked, “we’ve been talking about services a lot. But what does it really mean to provide a service in CAP?”
