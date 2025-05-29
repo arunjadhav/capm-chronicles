@@ -20,7 +20,9 @@ ________________________________________
 
 🧱 SQLite — The Developer’s Playground
 Emma: “Let’s start with what you already know — SQLite. It’s the default in CAP. You don’t even need to configure it explicitly, but here’s what it looks like in package.json or .cdsrc.json.”
+
 Alex: “So that’s why it just worked when I ran cds deploy!”
+
 Byte: “Exactly. It stores data in a local .sqlite file. Great for prototyping, but not for scaling.”
 
 ```json
