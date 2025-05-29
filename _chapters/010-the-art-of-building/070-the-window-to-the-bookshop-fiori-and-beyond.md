@@ -16,7 +16,7 @@ Byte jumped in. “That’s the magic of CAP. It automatically serves any UI pla
 
 ---
 
-🪟 Understanding the Fiori UI in CAP
+## Understanding the Fiori UI in CAP
 
 Emma opened the CAP documentation on Fiori and walked Alex through the essentials.
 
