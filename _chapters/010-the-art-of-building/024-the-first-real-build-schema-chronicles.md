@@ -175,24 +175,6 @@ Byte nodded. “CAPM does the heavy lifting. You just need to speak its language
 
 ---
 
-## Automating the Workflow
-
-Alex was feeling good. Confident, even. But then he made a small change in the code and had to restart the server manually.
-
-“Byte, do I have to restart every time I change something?”
-
-Byte rolled its virtual eyes. “Nope. Use this instead:”
-
-```
-cds watch
-```
-
-Alex tried it. He made a change, hit save, and watched the server restart automatically.
-
-“This is amazing,” he whispered.
-
----
-
 ## Testing Like a Pro
 
 Emma, overhearing the excitement, leaned over. “You know you can test your services without even opening the browser, right?”
