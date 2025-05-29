@@ -39,8 +39,9 @@ Byte: “Exactly. It stores data in a local .sqlite file. Great for prototyping,
 ________________________________________
 
 🚀 SAP HANA — The Enterprise Powerhouse
+
 Emma: “Now, when you move to production — especially on SAP BTP — you’ll want SAP HANA. It’s fast, in-memory, and deeply integrated with SAP services.”
-She showed Alex the configuration:
+She showed Alex the configuration.
 Byte: “And when you deploy to BTP, CAP automatically binds to the HANA service instance using environment variables. No need to hardcode credentials.”
 Alex: “So I just run cds deploy --to hana and it knows what to do?”
 Emma: “Exactly. And if you’re using an MTA project, it’ll even create the service instance for you.”
@@ -59,10 +60,14 @@ Emma: “Exactly. And if you’re using an MTA project, it’ll even create the 
 ________________________________________
 
 🌍 PostgreSQL — The Open-Source Ally
+
 Alex: “What if I’m not on BTP? Can I use something like PostgreSQL?”
+
 Byte: “You can! There’s a community adapter called cds-pg. It lets you use PostgreSQL with CAP.”
 Emma pulled up a sample config:
+
 Alex: “Nice! So I can use CAP even if I’m not in the SAP ecosystem.”
+
 Emma: “Exactly. PostgreSQL is great for open-source projects or hybrid environments.”
 
 ```json
@@ -86,8 +91,11 @@ Emma: “Exactly. PostgreSQL is great for open-source projects or hybrid environ
 ________________________________________
 
 🔄 Switching Between Databases
+
 Alex: “But switching between them… doesn’t that get messy?”
+
 Byte: “Not at all. CAP supports profiles. You can define different setups for development, testing, and production.”
+
 Emma showed him how:
 
 ```json
@@ -118,8 +126,12 @@ Byte: “Exactly. CAP abstracts the database layer so you can focus on your doma
 ________________________________________
 
 🧠 Wrapping Up
+
 As the lights dimmed and the last lines of code were committed, Alex leaned back with a satisfied grin.
+
 Alex: “So CAP gives me the freedom to start small, scale big, and even go open-source if I want. That’s powerful.”
+
 Emma: “And now you know what’s beneath the shelves of your Bookshop — a flexible, pluggable database layer.”
+
 Byte: “Next stop: deploying to the cloud?”
 Alex nodded. “Let’s do it.”
