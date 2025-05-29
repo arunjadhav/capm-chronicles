@@ -87,9 +87,9 @@ module.exports = (srv) => {
 🔄 Event Types: More Than Just Popcorn
 Emma added, “There are different kinds of events you might use in CAP:”
 
-Domain Events – Represent something that happened in your business domain (e.g., OrderShipped, PaymentFailed).
-Integration Events – Used to communicate across bounded contexts or external systems.
-Custom Events – Anything you define to trigger workflows or side effects.
+- Domain Events – Represent something that happened in your business domain (e.g., OrderShipped, PaymentFailed).
+- Integration Events – Used to communicate across bounded contexts or external systems.
+- Custom Events – Anything you define to trigger workflows or side effects.
 Byte chimed in, “And CAP supports both in-process and out-of-process messaging. So you can start small and scale big.”
 
 🎉 Wrapping Up: Let It Pop
