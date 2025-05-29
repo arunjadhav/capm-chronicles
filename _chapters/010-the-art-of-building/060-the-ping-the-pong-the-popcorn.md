@@ -3,9 +3,7 @@ layout: chapter
 order: 60
 title: "The Ping, The Pong, The Popcorn"
 ---
-
-Chapter 6: The Ping, The Pong, The Popcorn
-(A Lighthearted Look at Eventing & Messaging)
+A Lighthearted Look at Eventing & Messaging
 
 🍿 The Calm Before the Pop
 It was a quiet afternoon. Too quiet.
