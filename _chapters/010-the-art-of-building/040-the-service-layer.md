@@ -90,6 +90,41 @@ Alex grinned.
 
 ________________________________________
 
+________________________________________
+
+📝 Where Do You Implement Actions and Functions?
+
+Alex scratched his head. “Okay, I’ve defined these in my .cds file. But where do I actually write the logic for restockBook and topSellingBooks?”
+
+Byte replied, “Great question! In CAP, you implement the logic for actions and functions in a JavaScript (or TypeScript) handler file. By convention, this file lives in your `srv/` folder and is named after your service, like `catalog-service.js`.”
+
+Emma added, “You register your handlers using the `srv.on` or `srv.function` methods. Here’s a simple example:”
+
+```js
+// File: srv/catalog-service.js
+module.exports = (srv) => {
+  // Action handler
+  srv.on('restockBook', async (req) => {
+    const { ID, amount } = req.data;
+    // Your logic to update the stock for the book with the given ID
+    // For example:
+    await UPDATE('Books').set('stock +=', amount).where({ ID });
+    return { ID, restocked: amount };
+  });
+
+  // Function handler
+  srv.on('topSellingBooks', async (req) => {
+    // Your logic to fetch top-selling books
+    const topBooks = await SELECT.from('Books').orderBy('sales desc').limit(5);
+    return topBooks;
+  });
+};
+```
+
+Byte smiled. “Define the contract in CDS, implement the logic in JavaScript. That’s the CAP way!”
+
+________________________________________
+
 🖼️ A Design Sprint: Serving Media
 
 Later that day, the UX team dropped by.
