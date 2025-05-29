@@ -60,11 +60,28 @@ Alex grinned. “So it’s like a pizza party where everyone knows when to show 
 
 🧩 CAP + Messaging = Magic
 Byte continued, “In CAP, you can define events in your CDS model like this:”
-
-
+```cds
+entity OrderPlaced : event {
+  orderID : UUID;
+  customerID : UUID;
+  total : Decimal;
+}
+```
 “And then publish it in your service logic:”
-
-
+```js
+// In your service handler (srv/your-service.js)
+module.exports = (srv) => {
+  srv.on('placeOrder', async (req) => {
+    // ...order processing logic...
+    await srv.emit('OrderPlaced', {
+      orderID: req.data.ID,
+      customerID: req.data.customerID,
+      total: req.data.total
+    });
+    return { success: true };
+  });
+};
+```
 “Other services can subscribe to it using CAP’s messaging APIs. CAP handles the plumbing—so you can focus on the toppings.”
 
 🔄 Event Types: More Than Just Popcorn
