@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 70
 title: "The Window to the Bookshop — Fiori and Beyond"
 ---
 
