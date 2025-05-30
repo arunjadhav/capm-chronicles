@@ -32,11 +32,13 @@ Emma checked the deployment settings in SAP BTP.
 
 ## Enable CSRF Protection
 “CAP has CSRF protection built-in for web apps. Just make sure it’s not disabled.”
+```json
 "cds": {
   "csrf": {
     "enabled": true
   }
 }
+```
 
 Alex nodded.
 “No cross-site shenanigans allowed.”
@@ -45,7 +47,9 @@ Alex nodded.
 “If you’re not using certain services or entities, don’t expose them.”
 
 Emma commented out a test service:
+```cds
 // service DevToolsService { ... }
+```
 
 “No need to leave the dev tools lying around in production.”
 
@@ -61,9 +65,11 @@ if (req.data.password) delete req.data.password;
 “Even if you trust your UI, always validate on the backend.”
 
 Emma added a custom check:
+```javascript
 if (req.data.stock < 0) {
   req.reject(400, 'Stock cannot be negative');
 }
+```
 
 “Because users will find creative ways to break things.”
 
