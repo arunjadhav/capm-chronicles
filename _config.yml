@@ -15,7 +15,7 @@ baseurl_canonical: ""
 favicon_path: assets/gitbook/images/favicon.ico
 
 bookcrumbs:  
-  contents_url: /index.html
+  contents_url: /book.html
   book_icon: assets/gitbook/images/apple-touch-icon-precomposed-152.png
 
 in_chapter_toc:
