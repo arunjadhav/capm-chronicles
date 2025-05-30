@@ -1,4 +1,4 @@
 
-# Welcome to CAPM Chronicls
+# Byte-Sized CAPsules: The Bookshop Tales — Building and Securing Apps with SAP CAP
 
 Whether you’re a seasoned developer or just starting your journey with SAP’s Cloud Application Programming Model (CAP), this book is your companion for building and securing modern cloud applications. Join Alex, Emma, and Byte as they navigate real-world challenges, share practical tips, and inject a bit of fun into every chapter. Let’s make your CAP adventure secure, insightful, and enjoyable!
