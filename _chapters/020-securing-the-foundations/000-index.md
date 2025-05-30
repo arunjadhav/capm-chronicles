@@ -1,6 +1,6 @@
 ---
 layout: chapter
-order: 0
+order: 20
 permalink: /securing-the-foundations/
 title: "Securing the Foundations"
 ---
