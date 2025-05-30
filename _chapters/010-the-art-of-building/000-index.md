@@ -1,13 +1,17 @@
 ---
 layout: chapter
 permalink: /the-art-of-building/
-title: "Preface"
+title: "Part 1 - The art of Building"
 ---
 
-Let’s be honest—learning something new like CAP can feel like starting a video game with no instructions, no map, and a boss fight right at the beginning. Confusing, right?
+Building an app is one thing—understanding its foundations is another. In this part The Art of Buidling, Alex, Emma, and Byte explore the basics of CAP development. From setting up your first project to deploying your app, this section is all about laying the groundwork for your CAP journey.
 
-That’s where this book comes in. Byte-Sized CAPsules: The Bookshop Tales is a fun and friendly way to learn how to build apps using SAP’s Cloud Application Programming Model (CAP). You’ll follow Alex, a developer trying to figure things out, Emma, a smart architect who helps him, and Byte, an AI assistant who’s helpful, funny, and a little sarcastic.
+Each chapter is a story filled with practical advice, code examples, and the occasional laugh. You’ll learn how to:
 
-Each chapter is a short story filled with real code, common mistakes, and those great moments when things finally work. This book won’t turn you into a CAP expert overnight, and it doesn’t cover every tiny detail. But it will help you understand the basics, clear up confusion, and make you excited to keep learning and building.
+- Set up your CAP project and understand its structure.
+- Build smarter data models with aspects.
+- Create and consume services effectively.
+- Integrate with databases and manage data.
+- Deploy your app to various environments.
 
-So grab your favorite drink, open your laptop, and enjoy the Bookshop Tales. Just don’t be surprised if you start talking to your code like it’s listening.
+CAP isn’t just a framework—it’s a way to think about building apps. So grab your coffee, open your editor, and let’s build the foundations of your CAP application.
