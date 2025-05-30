@@ -1,4 +1,6 @@
 ---
+layout: chapter
+order: 140
 title: "Scopes and Permissions"
 description: "Explaining scopes vs roles and their implementation in CAP applications."
 ---
