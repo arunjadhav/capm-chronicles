@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 50
 title: "The Other Side of the Service"
 ---
 
