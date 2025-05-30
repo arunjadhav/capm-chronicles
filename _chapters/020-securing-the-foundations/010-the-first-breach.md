@@ -1,4 +1,6 @@
 ---
+layout: chapter
+order: 120
 title: "The First Breach"
 description: "Understanding authentication basics in CAP applications."
 ---
