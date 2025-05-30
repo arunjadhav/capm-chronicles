@@ -1,6 +1,6 @@
 ---
 slug: book
-title: CAPM Chronicles
+title: Byte-Sized CAPsules
 ---
 
 By Arun Ananda Jadhav
