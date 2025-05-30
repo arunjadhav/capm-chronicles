@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 10
 title: "The Shift, The Struggle, The Spark"
 ---
 
