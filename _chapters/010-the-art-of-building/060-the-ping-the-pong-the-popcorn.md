@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 60
 title: "The Ping, The Pong, The Popcorn"
 ---
 A Lighthearted Look at Eventing & Messaging
