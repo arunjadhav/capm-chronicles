@@ -1,8 +1,8 @@
 # GitHub Pages configuration for a technical book
 
 # Site settings
-title: "CAP Chronicles"
-longtitle: "CAP Chronicles"
+title: "Byte-Sized CAPsules"
+longtitle: "Byte-Sized CAPsules"
 author: "Arun Jadhav"
 author_email: "a2jadhav@gmail.com"
 description: "A technical book on SAP CAP, development, and the Bookshop sample."
