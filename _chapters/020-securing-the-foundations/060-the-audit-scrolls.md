@@ -27,9 +27,11 @@ Byte summoned a glowing scroll labeled Audit Trail.
 
 ## Logging User Actions
 Emma opened the service handler and added a simple log:
+```javascript
 srv.before(['CREATE', 'UPDATE', 'DELETE'], 'Books', (req) => {
   console.log(`[AUDIT] ${req.user.id} is performing ${req.event} on Books`);
 });
+```
 
 “Now we’ll know who’s doing what. And when Kevin tries to delete everything again, we’ll have proof.”
 
@@ -40,9 +42,11 @@ Alex nodded.
 
 ## Logging with Context
 Byte added more detail:
+```javascript
 srv.before('*', (req) => {
   console.log(`[AUDIT] ${req.user.id} called ${req.event} on ${req.target.name} at ${new Date().toISOString()}`);
 });
+```
 
 “This logs every event, with timestamps and target entities. You can even store these logs in a secure table if needed.”
 
