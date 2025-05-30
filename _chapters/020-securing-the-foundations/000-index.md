@@ -15,3 +15,5 @@ Each chapter is a story filled with practical advice, code examples, and the occ
 - Harden your app against real-world threats.
 
 Security isn’t just a feature—it’s a mindset. So grab your coffee, open your editor, and let’s secure the foundations of your CAP application.
+
+# Table of contents
