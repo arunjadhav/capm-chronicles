@@ -1,6 +1,7 @@
 ---
-layout: part
-title: "The art of Building"
+layout: chapter
+permalink: /the-art-of-building/
+title: "The art of buidling"
 ---
 
 Building an app is one thing—understanding its foundations is another. In this part The Art of Buidling, Alex, Emma, and Byte explore the basics of CAP development. From setting up your first project to deploying your app, this section is all about laying the groundwork for your CAP journey.
