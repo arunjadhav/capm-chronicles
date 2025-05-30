@@ -9,7 +9,9 @@ It was a quiet afternoon. Birds chirped. Logs were clean. No errors. No breaches
 Too quiet.
 
 Alex was reviewing the code when he spotted something that made his stomach drop.
+```javascript
 const dbPassword = 'SuperSecret123!';
+```
 
 “Uhh… guys? I think I just hardcoded a password.”
 
@@ -27,10 +29,14 @@ Byte summoned a vault icon.
 
 ## Using Environment Variables
 Emma opened the .env file:
+```javascript
 DB_PASSWORD=SuperSecret123!
+```
 
 Then in the code:
+```javascript
 const dbPassword = process.env.DB_PASSWORD;
+```
 
 “Now the secret is outside the code. We can manage it securely in deployment environments.”
 
@@ -39,6 +45,7 @@ Byte nodded.
 
 ## Secure Service Bindings in SAP BTP
 Byte projected a sample VCAP_SERVICES snippet:
+```json
 {
   "hana": [
     {
@@ -49,10 +56,12 @@ Byte projected a sample VCAP_SERVICES snippet:
     }
   ]
 }
+```
 
 “When you bind a service in SAP BTP, the credentials are injected into your app’s environment. CAP reads them automatically.”
 
 Emma added to package.json:
+```json
 "cds": {
   "requires": {
     "db": {
@@ -61,7 +70,7 @@ Emma added to package.json:
     }
   }
 }
-
+```
 “Now CAP knows where to find the credentials—without us ever touching them.”
 
 ## Testing the Vault
