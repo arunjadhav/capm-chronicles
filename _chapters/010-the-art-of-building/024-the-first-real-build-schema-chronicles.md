@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 24
 title: "The First Real Build – The Schema Chronicles (In a Nutshell)"
 ---
 
