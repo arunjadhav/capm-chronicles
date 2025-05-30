@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 0
 permalink: /the-art-of-building/
 title: "Preface"
 ---
