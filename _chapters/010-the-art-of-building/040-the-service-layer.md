@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 40
 title: "The Service Layer"
 ---
 
