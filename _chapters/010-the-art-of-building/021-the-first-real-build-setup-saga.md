@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 21
 title: "The First Real Build – The Setup Saga (npm init... or not?)"
 ---
 
