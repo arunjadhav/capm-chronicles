@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 80
 title: "Beneath the Shelves — A Conversation About Databases"
 ---
 
