@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 30
 title: "Smarter Data Models with Aspects"
 ---
 
