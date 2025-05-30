@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 100
 title: "Beyond the Books — The Bigger Picture of CAP"
 ---
 
