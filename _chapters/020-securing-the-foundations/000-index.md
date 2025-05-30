@@ -1,7 +1,6 @@
 ---
-layout: chapter
-permalink: /securing-the-foundations/
-title: "Securing the Foundations"
+slug: securingthefoundations
+layout: part
 ---
 
 Building an app is one thing—keeping it secure is another. In this part of Byte-Sized CAPsules: The Bookshop Tales, Alex, Emma, and Byte dive into the world of security. From locking the doors with authentication to managing secrets and auditing actions, this section is all about making sure your CAP application is ready to face the real world.
