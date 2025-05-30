@@ -1,5 +1,5 @@
 ---
-layout: part
+layout: chapter
 permalink: /securing-the-foundations/
 title: "Securing the Foundations"
 ---
