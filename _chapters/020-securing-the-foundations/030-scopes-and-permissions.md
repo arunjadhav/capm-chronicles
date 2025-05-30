@@ -30,6 +30,7 @@ Viewer	Read only
 
 ## Defining Scopes in xs-security.json
 Emma opened the file and added:
+```json
 {
   "scopes": [
     {
@@ -56,11 +57,13 @@ Emma opened the file and added:
     }
   ]
 }
+```
 
 “Now the Editor role can’t delete anything. Kevin’s cliff-diving days are over.”
 
 ## Enforcing Scopes in CDS
 Byte added a new restriction to the service:
+```cds
 entity Books as projection on my.Books {
   @restrict: [
     { grant: 'READ', to: 'CatalogService.Read' },
@@ -68,6 +71,7 @@ entity Books as projection on my.Books {
     { grant: 'DELETE', to: 'CatalogService.Delete' }
   ]
 }
+```
 
 “This way, CAP checks the user’s scopes before allowing any operation. No scope, no action.”
 
