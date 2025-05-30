@@ -1,6 +1,5 @@
 ---
 layout: chapter
-order: 90
 title: "Taking the Bookshop to the World — Deployment Options"
 ---
 
