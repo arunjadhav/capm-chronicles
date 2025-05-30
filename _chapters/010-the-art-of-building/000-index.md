@@ -13,3 +13,5 @@ Each chapter is a story filled with practical advice, code examples, and the occ
 - Deploy your app to various environments.
 
 CAP isn’t just a framework—it’s a way to think about building apps. So grab your coffee, open your editor, and let’s build the foundations of your CAP application.
+
+# Table of Contents
