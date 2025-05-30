@@ -29,9 +29,10 @@ Byte summoned a hologram of a nightclub.
 “Think of it like this: Everyone gets in the door, but only VIPs get into the lounge. And only staff can touch the DJ booth.”
 
 Emma opened the CatalogService.cds file and added:
+```cds
 @requires: 'Admin'
 entity Books as projection on my.Books;
-
+```
 “Now only users with the Admin role can access the Books entity.”
 
 ## Testing the VIP List
@@ -44,6 +45,7 @@ Alex tried accessing the service again—this time with a regular user token.
 ## Defining Roles in xs-security.json
 
 Emma pulled up the xs-security.json file.
+```json
 {
   "role-templates": [
     {
@@ -58,18 +60,21 @@ Emma pulled up the xs-security.json file.
     }
   ]
 }
+```
 
 “This is where we define the roles and what they can do. Then we assign them to users in the BTP cockpit.”
 
 ## Byte’s Bonus Tip: Role Inheritance
 
 “You can also use @restrict blocks for more fine-grained control,” Byte added.
+```cds
 entity Books as projection on my.Books {
   @restrict: [
     { grant: 'READ', to: 'Viewer' },
     { grant: '*', to: 'Admin' }
   ]
 }
+```
 
 Now viewers can only read, and admins can do everything. Kevin? He can watch from the hallway.”
 
