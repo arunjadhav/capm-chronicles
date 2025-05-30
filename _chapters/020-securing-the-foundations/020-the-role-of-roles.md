@@ -1,4 +1,6 @@
 ---
+layout: chapter
+order: 130
 title: "The Role of Roles"
 description: "Introducing role-based access control in CAP applications."
 ---
