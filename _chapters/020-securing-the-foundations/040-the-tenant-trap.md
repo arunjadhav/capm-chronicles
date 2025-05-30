@@ -28,6 +28,7 @@ Byte summoned a diagram of parallel universes.
 “CAP supports multi-tenancy out of the box,” Byte said. “But you need to activate it.”
 
 Emma opened the package.json and added:
+```cds
 "cds": {
   "requires": {
     "db": {
@@ -37,6 +38,7 @@ Emma opened the package.json and added:
     }
   }
 }
+```
 
 “This tells CAP to isolate data per tenant. Each tenant gets their own schema or data partition.”
 
@@ -53,9 +55,11 @@ Byte nodded.
 
 ## Bonus: Tenant-Aware Logic
 Emma added a custom handler to log tenant-specific actions:
+```javascript
 srv.before('READ', 'Books', (req) => {
   console.log(`Tenant ${req.tenant} is reading books`);
 });
+```
 
 “Now we can track who’s doing what, and where.”
 
