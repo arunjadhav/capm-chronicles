@@ -55,9 +55,22 @@ Emma smiled. “It’s where you define your data model. Think of it like the bl
 He saved the file—and the terminal reacted instantly:
 
 ```
-[cds] - model loaded from db/schema.cds
-[cds] - connect to db > sqlite { database: ':memory:' }
-/> successfully deployed to in-memory database.
+[cds] - loaded model from 1 file(s):
+
+  db\schema.cds
+
+[cds] - connect using bindings from: { registry: '~/.cds-services.json' }
+[cds] - connect to db > sqlite { url: ':memory:' }
+/> successfully deployed to in-memory database. 
+
+
+[cds] - server listening on { url: 'http://localhost:4004' }
+[cds] - server launched in: 790.725ms
+[cds] - [ terminate with ^C ]
+
+
+    No service definitions found in loaded models.
+    Waiting for some to arrive...
 ```
 
 “Whoa,” Alex said. “It just… worked?”
@@ -73,6 +86,11 @@ Emma leaned in, drawing a quick sketch in the air.
 “Right,” Byte nodded. “It resets every time you restart. But it drastically speeds up development. It’s not meant for production, but it’s perfect for mocking your target database—like SAP HANA—while you build.”
 
 > “And the best part?” Emma added. “You don’t have to configure anything. It just works.”
+
+“You’ve just exposed your data model,” Byte said. “Now open your browser and go to http://localhost:4004.”
+![image](https://github.com/user-attachments/assets/8aa569db-f2ad-4622-9e75-8beb3c173dd8)
+
+Alex grinned and whispered, "Thank you, CAPM, for making local testing so easy."
 
 ### 📁 Updated Folder Structure
 
@@ -138,6 +156,7 @@ Alex saved both files. The terminal lit up again:
 ```
 
 “You’ve just exposed your data as OData services,” Byte said. “Now open your browser and go to http://localhost:4004.”
+![image](https://github.com/user-attachments/assets/e134ae3b-94f4-4cee-babf-b7acae4acf1f)
 
 Alex did—and his jaw dropped.
 
@@ -168,6 +187,7 @@ Emma leaned back, satisfied.
 > “You’ve now completed the core CAPM flow: model, deploy, serve, and preview.”
 
 ---
+![image](https://github.com/user-attachments/assets/447ccabd-9062-4a1f-8b6a-0228c66ea08b)
 
 “I’ve got services,” Alex said, “but where’s the data? It’s like opening a bookstore with no books.”
 
