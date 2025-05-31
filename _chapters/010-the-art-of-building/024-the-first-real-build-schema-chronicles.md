@@ -225,7 +225,12 @@ ID;title;stock;author_ID
 
 Alex dropped them into place and restarted the app. Then he opened the Fiori preview.
 
-A clean, responsive UI appeared—tables for Books and Authors, complete with Create, Read, Update, and Delete operations.
+![image](https://github.com/user-attachments/assets/c3f2394b-7a1a-40ac-8f98-17e380541a7c)
+
+![image](https://github.com/user-attachments/assets/318f1910-552a-41e8-9688-2ed64161be4c)
+
+
+A clean, responsive UI appeared—tables for Books and Authors.
 
 “WOAH. It’s all there!” he said, eyes wide.
 
