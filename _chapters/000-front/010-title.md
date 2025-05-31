@@ -1,7 +1,6 @@
 ---
 slug: book
-title: Byte-Sized CAPsules
+title: 
 ---
-![image](https://github.com/user-attachments/assets/fa5224cc-daf6-4948-bcd9-89c438d6ed62)
+![image](https://github.com/user-attachments/assets/a76c1ea5-1c6b-4025-9052-d59b14d5c9b1)
 
-By Arun Ananda Jadhav
