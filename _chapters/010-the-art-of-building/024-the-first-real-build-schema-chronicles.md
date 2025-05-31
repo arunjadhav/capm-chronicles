@@ -31,7 +31,22 @@ Emma guided Alex to the `db/` folder.
 
 Alex created the file, and Byte floated in with a glowing code snippet.
 
-> “Here’s a simple entity to get us started.”
+ “Here’s a simple entity to get us started.”
+```cds
+namespace my.bookshop;
+
+entity Books {
+  key ID: Integer;
+  title: String;
+  stock: Integer;
+  author_ID: Integer;
+}
+
+entity Authors {
+  key ID: Integer;
+  name: String;
+}
+```
 
 ---
 
