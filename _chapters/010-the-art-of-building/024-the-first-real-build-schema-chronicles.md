@@ -32,6 +32,7 @@ Emma guided Alex to the `db/` folder.
 Alex created the file, and Byte floated in with a glowing code snippet.
 
  “Here’s a simple entity to get us started.”
+📄 schema.cds
 ```cds
 namespace my.bookshop;
 
@@ -121,7 +122,7 @@ Emma guided Alex to the `srv/` folder.
 > “Create two files: `admin-service.cds` and `catalog-service.cds`.”
 
 Alex did, and Byte helped with the code.
-admin-service.cds
+📄 admin-service.cds
 ```cds
 using { my.bookshop as my } from '../db/schema';
 
@@ -131,7 +132,7 @@ service AdminService {
 }
 ```
 
-catalog-service.cds
+📄 catalog-service.cds
 ```cds
 using { my.bookshop as my } from '../db/schema';
 
