@@ -102,6 +102,26 @@ Emma guided Alex to the `srv/` folder.
 > “Create two files: `admin-service.cds` and `catalog-service.cds`.”
 
 Alex did, and Byte helped with the code.
+admin-service.cds
+```cds
+using { my.bookshop as my } from '../db/schema';
+
+service AdminService {
+  entity Books as projection on my.Books;
+  entity Authors as projection on my.Authors;
+}
+```
+
+catalog-service.cds
+```cds
+using { my.bookshop as my } from '../db/schema';
+
+service CatalogService {
+  entity Books as projection on my.Books;
+  entity Authors as projection on my.Authors;
+}
+```
+
 
 ---
 
