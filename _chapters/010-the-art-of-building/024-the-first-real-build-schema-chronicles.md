@@ -263,7 +263,7 @@ GET http://localhost:4004/odata/v4/catalog/Books
 GET http://localhost:4004/odata/v4/admin/Authors
 ```
 
-![image](https://github.com/user-attachments/assets/a21ae190-3025-4aec-9626-08c1c91e8279)
+![image](https://github.com/user-attachments/assets/f00a8238-2ae1-464f-a68f-45a95f84c23d)
 
 Alex clicked “Send Request.” JSON responses popped up instantly.
 
