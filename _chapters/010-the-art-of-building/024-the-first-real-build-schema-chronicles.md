@@ -250,11 +250,13 @@ Byte answered before she could. “With .http files. Already set one up for you.
 
 ```
 ### Get all books  
-GET http://localhost:4004/catalog/Books  
+GET http://localhost:4004/odata/v4/catalog/Books  
 
 ### Get all authors  
-GET http://localhost:4004/admin/Authors  
+GET http://localhost:4004/odata/v4/admin/Authors
 ```
+
+![image](https://github.com/user-attachments/assets/a21ae190-3025-4aec-9626-08c1c91e8279)
 
 Alex clicked “Send Request.” JSON responses popped up instantly.
 
