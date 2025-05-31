@@ -274,6 +274,12 @@ Emma grinned. “You are.”
 Alex leaned back in his chair, proud. “Okay. Let’s build this bookstore.”
 
 ---
+## The first build
+Alex looked at the running project, eyes wide with excitement. 
+“Wow, I can’t believe I actually built this! My first CAP project is up and running!” He grinned, feeling proud—and a little bit curious to dive even deeper into what he could build next.
+
+![image](https://github.com/user-attachments/assets/ab76e986-aa4e-49ad-874f-6b0ee6fe0cd8)
+
 
 ## The Realization: Fast Inner Loops
 
@@ -302,3 +308,4 @@ Emma raised her coffee in a toast. “Welcome to the loop.”
 Alex raised his mug in return.
 
 “Let’s build something amazing.”
+
