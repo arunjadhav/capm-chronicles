@@ -136,7 +136,7 @@ service AdminService {
 ```cds
 using { my.bookshop as my } from '../db/schema';
 
-service CatalogService {
+service CatalogService @(path:'/browse') {
   entity Books as projection on my.Books;
   entity Authors as projection on my.Authors;
 }
@@ -156,10 +156,15 @@ Alex saved both files. The terminal lit up again:
 [cds] - serving CatalogService { at: '/browse' }
 [cds] - server listening on { url: 'http://localhost:4004' }
 ```
+Something interesting caught Emma’s attention. “Alex, the catalog service is available at /browse, but the admin service is at /odata/v4/admin. There’s a difference in their paths.”
 
+Alex guessed, “Hmm, is it because in the catalog service code, there’s an explicit @(path:'/browse') annotation, so it’s served at /browse? And maybe the admin service doesn’t have that, so it uses the default OData path?”
+
+Emma smiled and said, “Exactly right! The path annotation in the catalog service changes its endpoint, while the admin service sticks to the default since it doesn’t have one.”
 “You’ve just exposed your data as OData services,” Byte said. “Now open your browser and go to http://localhost:4004.”
 
-![image](https://github.com/user-attachments/assets/e134ae3b-94f4-4cee-babf-b7acae4acf1f)
+
+![image](https://github.com/user-attachments/assets/72c983e5-76a7-4aaa-a426-7482ce110895)
 
 Alex did—and his jaw dropped.
 
