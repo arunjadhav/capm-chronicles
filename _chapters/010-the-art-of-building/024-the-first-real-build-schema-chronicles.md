@@ -161,8 +161,9 @@ Something interesting caught Emma’s attention. “Alex, the catalog service is
 Alex guessed, “Hmm, is it because in the catalog service code, there’s an explicit @(path:'/browse') annotation, so it’s served at /browse? And maybe the admin service doesn’t have that, so it uses the default OData path?”
 
 Emma smiled and said, “Exactly right! The path annotation in the catalog service changes its endpoint, while the admin service sticks to the default since it doesn’t have one.”
-“You’ve just exposed your data as OData services,” Byte said. “Now open your browser and go to http://localhost:4004.”
+“You’ve just exposed your data as OData services,” 
 
+Byte said. “Now open your browser and go to http://localhost:4004.”
 
 ![image](https://github.com/user-attachments/assets/72c983e5-76a7-4aaa-a426-7482ce110895)
 
