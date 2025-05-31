@@ -88,6 +88,7 @@ Emma leaned in, drawing a quick sketch in the air.
 > “And the best part?” Emma added. “You don’t have to configure anything. It just works.”
 
 “You’ve just exposed your data model,” Byte said. “Now open your browser and go to http://localhost:4004.”
+
 ![image](https://github.com/user-attachments/assets/8aa569db-f2ad-4622-9e75-8beb3c173dd8)
 
 Alex grinned and whispered, "Thank you, CAPM, for making local testing so easy."
@@ -156,6 +157,7 @@ Alex saved both files. The terminal lit up again:
 ```
 
 “You’ve just exposed your data as OData services,” Byte said. “Now open your browser and go to http://localhost:4004.”
+
 ![image](https://github.com/user-attachments/assets/e134ae3b-94f4-4cee-babf-b7acae4acf1f)
 
 Alex did—and his jaw dropped.
@@ -187,7 +189,9 @@ Emma leaned back, satisfied.
 > “You’ve now completed the core CAPM flow: model, deploy, serve, and preview.”
 
 ---
-![image](https://github.com/user-attachments/assets/447ccabd-9062-4a1f-8b6a-0228c66ea08b)
+
+![image](https://github.com/user-attachments/assets/860aa67e-c2c2-474e-ab55-c1ef1c59786c)
+
 
 “I’ve got services,” Alex said, “but where’s the data? It’s like opening a bookstore with no books.”
 
