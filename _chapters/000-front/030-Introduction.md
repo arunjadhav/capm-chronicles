@@ -9,3 +9,5 @@ That’s where this book comes in. Byte-Sized CAPsules: The Bookshop Tales is a 
 Each chapter is a short story filled with real code, common mistakes, and those great moments when things finally work. This book won’t turn you into a CAP expert overnight, and it doesn’t cover every tiny detail. But it will help you understand the basics, clear up confusion, and make you excited to keep learning and building.
 
 So grab your favorite drink, open your laptop, and enjoy the Bookshop Tales. Just don’t be surprised if you start talking to your code like it’s listening.
+
+> 💡 **Pro Tip:** Whenever you see a prompt for username and password in these examples, just use `Alice` as the username and leave the password blank. Why? Because Alice is always the first to try things, and she’s too cool for passwords. (CAPM agrees—no password needed for local fun!)
