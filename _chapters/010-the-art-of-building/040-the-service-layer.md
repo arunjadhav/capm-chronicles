@@ -117,6 +117,26 @@ Byte explained, “You can call actions and functions via HTTP requests or from 
 - **Calling a Parameterless Function:**
   - HTTP GET to `/catalog/getBookCount`
 
+Alex asked, “So I can test these functions directly using test.http, right? Can you show me how that would look?”
+
+Byte nodded, “Absolutely! Here’s how you’d write those requests in your test.http file for easy testing in VS Code:”
+
+```
+### Call Function: topSellingBooks
+GET http://localhost:4004/catalog/topSellingBooks
+
+### Call Parameterless Function: getBookCount
+GET http://localhost:4004/catalog/getBookCount
+
+### Call Function with Input Parameter: booksByAuthor
+GET http://localhost:4004/catalog/booksByAuthor(author='J.K. Rowling')
+
+### Call Function with Multiple Input Parameters: booksByAuthorAndYear
+GET http://localhost:4004/catalog/booksByAuthorAndYear(author='J.K. Rowling',year=2007)
+```
+
+Byte smiled, “Just copy these into your test.http file, select a request, and click 'Send Request' in VS Code. You’ll see the results instantly!”
+
 Emma added, “In Fiori Elements, actions appear as buttons, and functions can be triggered from the UI or used in analytics.”
 
 ---
@@ -169,6 +189,7 @@ Emma explained, “Now, you can call the function with both parameters.”
 
 **Consuming the function:**
 - HTTP GET to `/catalog/booksByAuthorAndYear(author='J.K. Rowling',year=2007)`
+
 
 **Implementing the logic:**
 ```js
