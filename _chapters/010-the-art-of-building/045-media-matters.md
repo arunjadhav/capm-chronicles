@@ -59,11 +59,22 @@ Alex was curious. “How do I get the image back?”
 
 Byte smiled. “Just GET `/catalog/BookCovers(ID)` and CAP will stream the image with the correct media type. You can also download it directly from the browser or a UI5 app.”
 
-**Example:**
-- HTTP GET `/catalog/BookCovers(ID)`
-- Response: Binary image data with `Content-Type: image/png`
+Emma replied, “It’s just as simple! Here’s how you can do it:”
 
----
+- **Step 1:** Open your browser or API tool (like Postman, VS Code REST Client, or curl).
+- **Step 2:** Make a GET request to `/catalog/BookCovers(ID)`, replacing `ID` with the actual ID of your uploaded image.
+- **Step 3:** The response will be the binary image data, and the `Content-Type` header will be set to `image/png`.
+- **Step 4:** In a browser, the image will display directly. In an API tool, you can save the file to disk.
+
+Byte added, “Or, if you prefer the command line, you can use curl to download the image like this:”
+
+**Sample curl command:**
+```sh
+curl -o downloaded_cover.png \
+  http://localhost:4004/catalog/BookCovers/<ID>
+```
+
+Emma smiled, “This way, you can easily preview or download any media file stored in your CAP service!”
 
 Emma continued, “You can use the same approach for sample chapters, PDFs, or audio files. Just change the `@Core.MediaType` annotation.”
 
