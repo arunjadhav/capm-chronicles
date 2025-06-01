@@ -31,14 +31,29 @@ Alex studied the code. “So the `content` field holds the image, and `@Core.Med
 
 Emma explained, “To upload a book cover, you POST to `/catalog/BookCovers` with the image as the body and set the right Content-Type header.”
 
-**Example:**
-- HTTP POST `/catalog/BookCovers`
-- Headers: `Content-Type: image/png`
-- Body: (binary image data)
+Alex looked a bit puzzled. “But how would I actually do that? I’ve only ever uploaded JSON data.”
 
-Byte added, “CAP will store the image in the `content` field and generate an ID. You can also send the filename as a property.”
+Byte grinned, “It’s easier than you think! Let’s walk through it step by step.”
 
----
+Emma continued, “Imagine you’re using Postman, VS Code REST Client, or even curl. Here’s what you’d do:”
+
+- **Step 1:** Open your favorite API tool (like Postman, VS Code REST Client, or even curl).
+- **Step 2:** Set the request to POST and the URL to `/catalog/BookCovers`.
+- **Step 3:** In the headers, add `Content-Type: image/png`.
+- **Step 4:** In the body, select 'binary' and upload your image file.
+- **Step 5:** (Optional) Add a `filename` property in the JSON part if your tool supports multipart/form-data.
+
+Byte added, “Or, if you’re a command-line fan, here’s how you’d do it with curl:”
+
+**Sample curl command:**
+```sh
+curl -X POST \
+  -H "Content-Type: image/png" \
+  --data-binary @cover.png \
+  http://localhost:4004/catalog/BookCovers
+```
+
+Byte smiled, “CAP will store the image in the `content` field and generate an ID. You can also send the filename as a property.”
 
 Alex was curious. “How do I get the image back?”
 
