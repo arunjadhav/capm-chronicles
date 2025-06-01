@@ -45,12 +45,15 @@ Emma continued, “Imagine you’re using Postman, VS Code REST Client, or even 
 
 Byte added, “Or, if you’re a command-line fan, here’s how you’d do it with curl:”
 
-**Sample curl command:**
-```sh
-curl -X POST \
-  -H "Content-Type: image/png" \
-  --data-binary @cover.png \
-  http://localhost:4004/catalog/BookCovers
+Byte added, “Or, if you’re testing locally, you can use a test.http file to make this even easier. Here’s how your request would look:”
+
+**test.http example:**
+```
+### Upload a Book Cover (PNG)
+POST http://localhost:4004/catalog/BookCovers
+Content-Type: image/png
+
+< ./cover.png
 ```
 
 Byte smiled, “CAP will store the image in the `content` field and generate an ID. You can also send the filename as a property.”
@@ -66,13 +69,15 @@ Emma replied, “It’s just as simple! Here’s how you can do it:”
 - **Step 3:** The response will be the binary image data, and the `Content-Type` header will be set to `image/png`.
 - **Step 4:** In a browser, the image will display directly. In an API tool, you can save the file to disk.
 
-Byte added, “Or, if you prefer the command line, you can use curl to download the image like this:”
+Byte added, "Here’s how your request would look in test.http fiel for local testing:”
 
-**Sample curl command:**
-```sh
-curl -o downloaded_cover.png \
-  http://localhost:4004/catalog/BookCovers/<ID>
+**test.http example:**
 ```
+### Download a Book Cover by ID
+GET http://localhost:4004/catalog/BookCovers/{{bookCoverId}}
+```
+
+Emma smiled, “Just replace `{{bookCoverId}}` with the actual ID, select the request in VS Code, and click 'Send Request'. Your image will be downloaded or previewed right in the editor!”
 
 Emma smiled, “This way, you can easily preview or download any media file stored in your CAP service!”
 
